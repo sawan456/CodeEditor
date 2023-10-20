@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeEditor</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div>
+        <!-- All headings are here -->
+        <div class='heading'>
+          <h1>HTML</h1>
+          <h1>CSS</h1>
+          <h1>JavaScript</h1>
+        </div>
+        
+        <!-- All TextAreas are Here -->
+        <div class='containerForTextarea'>
+          <textarea id='myAreaHTML' placeholder='Write HTML code here...'></textarea>
+          <textarea id='myAreaCSS' placeholder='Write CSS code here...'></textarea>
+          <textarea id='myAreaJS' placeholder='Write JavaScript code here...'></textarea>
+        </div>
+        
+        <!-- All Copy Save Lock/Unlock Buttons are Here -->
+        <div class='buttonSection'>
+          <div class='buttonForHTML'>
+            <button onclick="copyHTML()" id="copy-btnHTML">Copy</button>
+            <button id="save-btnHTML">Save</button>
+            <button id="lock-btnHTML" onclick="lockHTML()">Lock</button>
+          </div>
+          <div class='buttonForCSS'>
+            <button onclick="copyCSS()" id="copy-btnCSS">Copy</button>
+            <button id="save-btnCSS">Save</button>
+            <button id="lock-btnCSS" onclick="lockCSS()">Lock</button>
+          </div>
+          <div class='buttonForJS'>
+            <button onclick="copyJS()" id="copy-btnJS">Copy</button>
+            <button id="save-btnJS">Save</button>
+            <button id="lock-btnJS" onclick="lockJS()">Lock</button>
+          </div>
+        </div>
+
+        <!-- Output field here -->
+        <div class='output'>
+          <h2>Output</h2>
+          <iframe id='code'></iframe>
+        </div>
+      </div>
+      <p style="text-align: center;">© All Rights Reserved by Sawan Rawat</p>
+        <script type="text/JavaScript" src="script.js"></script>
+</body>
+</html>
